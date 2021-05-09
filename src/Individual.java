@@ -20,10 +20,17 @@ public class Individual {
                     isValid = true
             return isValid
         doSkill(skillName)
-            
-
-        findTechnique
+            if validateSkill(skillName)
+                do skillName
+        validateTechnique(techniqueName)
+            isValid = false
+            for i in techniques.length
+                if techniques[i] == techniqueName
+                    isValid = true
+            return isValid
         doTechnique(techniqueName)
+            if validateTechnique
+                do techniqueName
 
     Constructors:
         Individual()
