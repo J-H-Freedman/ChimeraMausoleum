@@ -22,13 +22,19 @@ public class Fight {
 
         on their turn:
             when limb is attacked
-                exhaust limb to defend
+                exhaust different limb to defend
+                    defend with arm or tail of your choice
                     if limb == head
-                        you *must* defend
-                        defend with arm or tail of your choice
+                        you *must* defend if able to
                 or receive damage to limb
                 if limb.durability =< 0
                     limb.loseLimb()
+
+        limbs lose durability when damaged
+        limbs lose increased durability when blocking
+            held items increase durability
+                held equipment's durability returns on rest
+            shield switches to reduced durability
      */
 
 }
