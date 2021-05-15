@@ -7,13 +7,9 @@ public class Species {
     //
     String speciesName;
     private int maxHeads = 1;
-
-
-
     private int maxArms = 0;
     private int maxLegs = 0;
     private int maxTails = 0;
-    private int maxLimbs = maxHeads + maxArms + maxLegs + maxTails;
 
     boolean isValid(int input) {
         return input>0;
@@ -70,18 +66,9 @@ public class Species {
         this.maxTails = maxTails;
     }
 
-    /**
-     * Get the maximum amount of total limbs this species can have by default
-     * @return the max limbs
-     */
-    public int getMaxLimbs() {
-        return maxLimbs;
+    public int getMaxLimbTotal() {
+        return (maxHeads + maxArms + maxLegs + maxTails);
     }
-
-    public void setMaxLimbs(int maxLimbs) {
-        this.maxLimbs = maxLimbs;
-    }
-
 
     // Constructors
     Species() {
