@@ -4,7 +4,6 @@ public class Individual extends Species {
 
 // Attributes:
     String name;
-    int KNO = 0;
     int POW = 0;
     int END = 0;
     int SPD = 0;
@@ -413,18 +412,16 @@ public class Individual extends Species {
     Individual(String iName) {
         name = iName;
     }
-    Individual(String iName, int iKNO, int iPOW, int iEND, int iSPD, int iESP) {
+    Individual(String iName, int iPOW, int iEND, int iSPD, int iESP) {
         name = iName;
-        KNO = iKNO;
         POW = iPOW;
         END = iEND;
         SPD = iSPD;
         ESP = iESP;
     }
-    Individual(String iName, int iKNO, int iPOW, int iEND, int iSPD, int iESP,
+    Individual(String iName, int iPOW, int iEND, int iSPD, int iESP,
                 String[] iSkill, String[] iTechnique) {
          name = iName;
-         KNO = iKNO;
          POW = iPOW;
          END = iEND;
          SPD = iSPD;
